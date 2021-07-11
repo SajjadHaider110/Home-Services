@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wraper"
+        android:layout_above="@id/wraper"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNavigation"
+        app:menu="@menu/navigation_menu"
+        android:layout_alignParentBottom="true"
+        android:background="@color/browser_actions_bg_grey"
+        />
+
+
+<!--    <Button-->
+<!--android:layout_below="@id/wraper"-->
+<!--   android:layout_gravity="bottom"-->
+<!--        android:id="@+id/logoutbtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginLeft="150dp"-->
+<!--        android:text="Logout" />-->
+</RelativeLayout>

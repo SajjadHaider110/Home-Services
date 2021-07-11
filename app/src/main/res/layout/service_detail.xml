@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceDetail"
+    android:background="@color/Gray">
+
+    -<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_height="228dp"
+        android:layout_width="240dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="40dp"
+        android:id="@+id/imagegholder"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/nameholder"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Candidate Name"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/addressholder"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:text="Candidate Course"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/mobileholder"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:text="Candidate Email"/>
+    <ImageButton
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/btcall"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/call_24"
+        android:background="@drawable/bg_round"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:text="Call Now"
+        android:textSize="15dp"
+        />
+</LinearLayout>
+
+</FrameLayout>

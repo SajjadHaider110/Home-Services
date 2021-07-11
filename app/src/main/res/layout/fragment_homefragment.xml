@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".homefragment"
+    android:id="@+id/layout1">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="20dp">
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select Location"
+                    app:boxBackgroundColor="@color/white"
+                    app:startIconDrawable="@drawable/location">
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:inputType="none"
+                            android:textColor="#000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gird_view"
+            android:numColumns="2"/>
+</LinearLayout>
+
+
+<!--        -->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--                android:id="@+id/recycle"-->
+<!--                />-->
+
+        
+
